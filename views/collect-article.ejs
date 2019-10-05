@@ -1,0 +1,26 @@
+<% include head %>
+    <form class="collect-article" method="post" name="fetchForm" action='/articles'>
+        <div class="form-group">
+            <label for="url">爬取文章地址</label>
+            <input type="url" class="form-control" placeholder="请输入要爬取的文章地址" name="url" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">爬取</button>
+            <a href="javascript:void(0);" class="btn btn-default btn-look">查看</a>
+        </div>
+    </form>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+            <!-- <strong class="mr-auto">Bootstrap</strong> -->
+            <!-- <small class="text-muted">11 mins ago</small> -->
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+           爬取成功！
+        </div>
+    </div>
+    <script src="/js/fetchArticle.js"></script>
+<% include foot %>

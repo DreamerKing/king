@@ -1,0 +1,17 @@
+
+    <% include ../head %>
+    <h1><%= title %></h1>
+    <form action="/post" method="post">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" name="entry[title]" id="title"/>
+        </div>
+        <div class="form-group">
+            <label for="content">content:</label>
+            <textarea id="content" class="form-control" name="entry[content]"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Post"/>
+        </div>
+    </form>
+<% include ../foot %>

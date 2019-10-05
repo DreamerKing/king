@@ -1,0 +1,15 @@
+<% include ../head %>
+<h1><%= title %></h1>
+<% include message %>
+<form action="/register" method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" required name="user[name]" placeholder="name" />
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" required placeholder="password" name="user[pass]"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Sign Up" />
+    </div>
+</form>
+<% include ../foot %>

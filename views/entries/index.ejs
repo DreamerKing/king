@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entry</title>
+</head>
+<body>
+    <% include menu %>
+    <% entries.forEach((entry) => { %>
+        <div class="entry">
+            <h3><%= entry.name %></h3>   
+            <p><%= entry.body %></p> 
+            <p><%= entry.userName %></p>
+        </div>
+    <% }) %>
+</body>
+</html>
