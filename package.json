@@ -17,7 +17,7 @@
     "cookie-parser": "^1.4.4",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mongodb": "^3.3.2",
     "node-readability": "^3.0.0",
     "redis": "^2.8.0",
